@@ -1,0 +1,32 @@
+@media (max-width: 991px) {
+	.button {
+		&_main {
+			margin-top: 40px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.button {
+		width: 135px;
+		&_main {
+			width: 250px;
+		}
+	}
+}
+
+@media (max-width:575px) {
+	.button{
+		&_main {
+			margin-top: 45px;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.button{
+		&_main {
+			margin-top: 30px;
+		}
+	}
+}
