@@ -1,0 +1,33 @@
+.customer {
+	margin-bottom: 50px;
+	&-items {
+	}
+	&-item {
+		margin-top: 60px;
+		display: flex;
+		align-items: flex-start;
+		&__img{
+
+		}
+		&__content {
+			padding-left: 60px;
+		}
+		&__title {
+			color: #0D0D0D;
+			font-size: 18px;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+		&__subtitle {
+			color: #646464;
+			font-size: 14px;
+			font-weight: 500;
+			margin-bottom: 10px;
+		}
+		&__descr {
+			color: #0D0D0D;
+			font-size: 16px;
+			font-weight: 300;
+		}
+	}
+}
