@@ -1,4 +1,22 @@
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	80% {
+		transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+
 .button {
+	position: relative;
 	width: 150px;
 	height: 30px;
 	border-radius: 5px;
@@ -11,6 +29,9 @@
 	font-weight: 500;
 	line-height: normal;
 	text-transform: uppercase;
+	&:hover {
+	animation: bounce 1s;
+}
 	&--main {
 		margin-top: 67px;
 		width: 300px;
@@ -26,5 +47,11 @@
 		width: 135px;
 		height: 44px;
 		font-size: 14px;
+		&:hover{
+			background: rgba(0,0,0,0);
+			color: $main-color;
+			box-shadow: inset 0 0 0 3px $main-color;
+		}
+
 	}
 }
