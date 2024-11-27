@@ -1,5 +1,8 @@
 @keyframes bounce {
-	0%, 20%, 60%, 100% {
+	0%,
+	20%,
+	60%,
+	100% {
 		transform: translateY(0);
 		transform: translateY(0);
 	}
@@ -30,8 +33,8 @@
 	line-height: normal;
 	text-transform: uppercase;
 	&:hover {
-	animation: bounce 1s;
-}
+		animation: bounce 1s;
+	}
 	&--main {
 		margin-top: 67px;
 		width: 300px;
@@ -47,11 +50,10 @@
 		width: 135px;
 		height: 44px;
 		font-size: 14px;
-		&:hover{
-			background: rgba(0,0,0,0);
+		&:hover {
+			background: rgba(0, 0, 0, 0);
 			color: $main-color;
 			box-shadow: inset 0 0 0 3px $main-color;
 		}
-
 	}
 }
