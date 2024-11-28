@@ -2,6 +2,9 @@
 @import '../media/advantage_media';
 @import '../media/buttons_media';
 @import '../media/header_media';
+@import '../media/consultation_media';
+@import '../media/forms_media';
+@import '../media/title_media';
 
 @media (max-width: 991px) {
 	.container {
@@ -19,6 +22,10 @@
 	.container {
 		max-width: 400px;
 	}
+		.consultation__container {
+		max-width: 432px;
+	}
+
 }
 
 @media (max-width: 425px) {
