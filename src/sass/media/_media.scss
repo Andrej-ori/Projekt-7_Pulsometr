@@ -6,6 +6,7 @@
 @import '../media/forms_media';
 @import '../media/title_media';
 @import '../media/carousel_media';
+@import '../media/catalog_media';
 
 @media (max-width: 991px) {
 	.container {
@@ -16,15 +17,18 @@
 @media (max-width: 767px) {
 	.container {
 		max-width: 534px;
+		&__catalog {
+			max-width: 630px;
+		}
 	}
 }
 
 @media (max-width: 575px) {
 	.container {
 		max-width: 400px;
-	}
-		.consultation__container {
-		max-width: 432px;
+		&__consultation {
+			max-width: 432px;
+		}
 	}
 
 }
