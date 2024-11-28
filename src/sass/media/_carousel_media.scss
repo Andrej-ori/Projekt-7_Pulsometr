@@ -1,0 +1,33 @@
+@media (max-width: 991px) {
+	.carousel{
+		&__inner {
+			width: 100%;
+			img{
+				width: 100%;
+			}
+			.slick-dots{
+				width: 150px;
+				margin: 20px auto 0 auto;
+				padding: 0;
+				display: flex;
+				list-style-type: none;
+				justify-content: space-between;
+				li {
+					button {
+						font-size: 0;
+						padding: 2px;
+						border-radius: 100%;
+						border: 2px solid $main-color;
+						background-color: #fff;
+					}
+				}
+				.slick-active{
+					button{
+						background-color: $main-color;
+						border: 2px solid $main-color;
+					}
+				}
+			}
+		}
+	}
+}
