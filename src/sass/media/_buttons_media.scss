@@ -9,15 +9,19 @@
 @media (max-width: 767px) {
 	.button {
 		width: 135px;
-		&_main {
-			width: 250px;
+		&--main {
+			width: 190px;
+			font-size: 16px;
+		}
+		&--sabmint {
+			width: 100%;
 		}
 	}
 }
 
 @media (max-width:575px) {
 	.button{
-		&_main {
+		&--main {
 			margin-top: 45px;
 		}
 	}
@@ -25,7 +29,7 @@
 
 @media (max-width: 425px) {
 	.button{
-		&_main {
+		&--main {
 			margin-top: 30px;
 		}
 	}

@@ -2,45 +2,11 @@
 @import '../media/advantage_media';
 @import '../media/buttons_media';
 @import '../media/header_media';
-
-@media (max-width: 991px) {
-	.container {
-		max-width: 726px;
-	}
-}
-
-@media (max-width: 767px) {
-	.container {
-		max-width: 534px;
-	}
-}
-
-@media (max-width: 575px) {
-	.container {
-		max-width: 400px;
-	}
-}
-
-@media (max-width: 425px) {
-	.container {
-		max-width: 380px;
-	}
-}
-
-@media (max-width: 400px) {
-	.container {
-		max-width: 350px;
-	}
-}
-
-@media (max-width: 370px) {
-	.container {
-		max-width: 300px;
-	}
-}
-
-@media (max-width: 320px) {
-	.container {
-		max-width: 300px;
-	}
-}
+@import '../media/consultation_media';
+@import '../media/forms_media';
+@import '../media/title_media';
+@import '../media/carousel_media';
+@import '../media/catalog_media';
+@import "../media/customer_media";
+@import "../media/footer_media";
+@import "../media/container_media";

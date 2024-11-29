@@ -1,0 +1,46 @@
+@media (max-width: 991px) {
+	.catalog {
+		padding-bottom: 60px;
+		&__content {
+			justify-content: space-evenly;
+		}
+		&-item {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+@media (max-width:767px) {
+	.catalog{
+		&__content {
+			justify-content: space-between
+		}
+		&-item{
+			margin-bottom: 25px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.catalog {
+		&__content {
+			justify-content: center;
+			margin-top: 20px;
+		}
+		&__tabs{
+			margin-top: 20px;
+			flex-direction: column
+		}
+		&__tab {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.catalog{
+		.title{
+			font-size: 23px;
+		}
+	}
+}
