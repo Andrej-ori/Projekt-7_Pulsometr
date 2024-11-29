@@ -8,52 +8,5 @@
 @import '../media/carousel_media';
 @import '../media/catalog_media';
 @import "../media/customer_media";
-
-@media (max-width: 991px) {
-	.container {
-		max-width: 726px;
-	}
-}
-
-@media (max-width: 767px) {
-	.container {
-		max-width: 534px;
-		&__catalog {
-			max-width: 630px;
-		}
-	}
-}
-
-@media (max-width: 575px) {
-	.container {
-		max-width: 400px;
-		&__consultation {
-			max-width: 432px;
-		}
-	}
-
-}
-
-@media (max-width: 425px) {
-	.container {
-		max-width: 380px;
-	}
-}
-
-@media (max-width: 400px) {
-	.container {
-		max-width: 350px;
-	}
-}
-
-@media (max-width: 370px) {
-	.container {
-		max-width: 300px;
-	}
-}
-
-@media (max-width: 320px) {
-	.container {
-		max-width: 300px;
-	}
-}
+@import "../media/footer_media";
+@import "../media/container_media";
