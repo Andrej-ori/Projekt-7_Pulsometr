@@ -42,7 +42,7 @@ gulp.task('scripts', function () {
 				.pipe(browserSync.stream());
 });
 
-// отслеживание изменений в файлах sass|scss и html файлах
+// отслеживание изменений в файлах sass|scss , html и js файлах
 
 // gulp.task('watch', function(){
 // 	gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
@@ -53,7 +53,7 @@ gulp.task('scripts', function () {
 gulp.task('watch', function () {
 	gulp.watch('src/sass/**/*.+(scss|sass|css)', gulp.parallel('styles'));
 	gulp.watch('src/js/**/*.js').on('change', gulp.parallel('scripts'));
-	// gulp.watch("src/*.html").on("change", gulp.parallel("html"));
+	gulp.watch("src/*.html").on("change", browserSync.reload);
 });
 
 
