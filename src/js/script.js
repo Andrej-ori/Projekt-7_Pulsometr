@@ -98,30 +98,36 @@ $(document).ready(function () {
 
 	//! Validate
 
-	$("#consultation-form").validate();
-	$("#consultation form").validate({
-		rules: {
-			name: {
-				required: true,
-				minlength: 2
+	function validForm(form) {
+		$(form).validate({
+			rules: {
+				name: {
+					required: true,
+					minlength: 2
+				},
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				}
 			},
-			phone: "required",
-			email: {
-				required: true,
-				email: true
+			messages: {
+				name: {
+					required: "Пожалуйста, введите своё имя",
+					minlength: jQuery.validator.format(
+						" В имени должно быть не менее {0}-х символов!"
+					)
+				},
+				phone: "Пожалуйста, введите свой номер телефона",
+				email: {
+					required: "Пожалуйста, введите свою почту",
+					email: "Ваш e-mail должен быть в формате: name@domain.com"
+				}
 			}
-		},
-		messages: {
-			name: {
-				required: "Пожалуйста, введите своё имя",
-				minlength: jQuery.validator.format(" В имени должно быть не менее {0}-х символов!")
-			},
-			phone: "Пожалуйста, введите свой номер телефона",
-			email: {
-				required: "Пожалуйста, введите свою почту",
-				email: "Ваш e-mail должен быть в формате: name@domain.com"
-			}
-		}
-	});
-	$("#order form").validate();
+		});
+	};
+
+	validForm("#consultation-form");
+	validForm("#consultation form");
+	validForm("#order form");
 });
