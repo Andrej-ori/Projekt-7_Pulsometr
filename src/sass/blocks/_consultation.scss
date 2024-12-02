@@ -9,4 +9,14 @@
 		font-weight: 500;
 		line-height: 30px; /* 150% */
 	}
+		.error {
+		border: 1px solid red;
+	}
+	label.error {
+		border: none;
+		text-align: left;
+		color: #fff;
+		margin-bottom: 15px;
+		font-size: 13px;
+	}
 }

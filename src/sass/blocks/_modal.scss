@@ -40,9 +40,19 @@
 	}
 	&--mini {
 		min-height: 143px;
-			padding: 35px 25px 35px 25px;
-
+		padding: 35px 25px 35px 25px;
 	}
+	.error {
+		border: 1px solid red;
+	}
+	label.error {
+		border: none;
+		text-align: left;
+		color: $main-color;
+		margin-bottom: 15px;
+		font-size: 13px;
+	}
+
 }
 
 #consultation, #order, #thenks {
