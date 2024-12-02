@@ -130,4 +130,8 @@ $(document).ready(function () {
 	validForm("#consultation-form");
 	validForm("#consultation form");
 	validForm("#order form");
+
+	//! Настройка маски для номера телефона
+
+	$("input[name=phone]").mask("+7 (999) 999-99-99");
 });
